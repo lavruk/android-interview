@@ -1,0 +1,11 @@
+# IDEA
+
+*.iml
+/.idea/**/*.*
+!/.idea/codeStyles/**/*.*
+
+.gradle
+build
+/reports
+
+/local.properties
