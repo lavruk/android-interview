@@ -1,4 +1,4 @@
-package com.whatnot.productcatalog
+package com.whatnot.sample
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
