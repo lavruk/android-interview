@@ -8,7 +8,7 @@ class ProductList(
   private val fetchProductList: FetchProductList,
   private val productEvents: ProductEvents,
 ) {
-  fun pinnedProductObservable(): Observable<Optional<AuctionProduct>> = TODO()
+  fun pinnedProduct(): Observable<Optional<AuctionProduct>> = TODO()
 
-  fun productListObservable(): Observable<List<AuctionProduct>> = TODO()
+  fun asObservable(): Observable<List<AuctionProduct>> = TODO()
 }

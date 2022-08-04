@@ -18,7 +18,7 @@ suspend fun runAuction(
   durationSeconds: Int,
   onEvent: suspend (ProductEvent) -> Unit
 ) {
-  withContext(Dispatchers.Unconfined) {
+  withContext(Dispatchers.IO) {
     val endTime = System.currentTimeMillis() + (durationSeconds * 1000)
 
     var currentPriceCents = 0
