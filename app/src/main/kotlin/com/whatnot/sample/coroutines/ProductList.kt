@@ -1,5 +1,6 @@
-package com.whatnot.sample
+package com.whatnot.sample.coroutines
 
+import com.whatnot.sample.AuctionProduct
 import kotlinx.coroutines.flow.Flow
 
 class ProductList(
