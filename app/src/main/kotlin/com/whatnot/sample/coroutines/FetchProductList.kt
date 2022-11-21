@@ -3,7 +3,8 @@ package com.whatnot.sample.coroutines
 import com.whatnot.sample.util.generateProducts
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import kotlin.coroutines.CoroutineContext
 
-class FetchProductList {
-  suspend fun getProducts() = withContext(Dispatchers.IO) { generateProducts() }
+class FetchProductList(private val context: CoroutineContext = Dispatchers.IO) {
+  suspend fun getProducts() = withContext(context) { generateProducts() }
 }
